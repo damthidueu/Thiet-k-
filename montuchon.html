@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chuyenanh.css">
+    <title>Món tự chọn</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header1">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p style="color: white; padding-top: 5px;">Nhà hàng Trung Thành hân hạnh được phục vụ quý khách!
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 inputType">
+                        <p style="color: rgb(214, 211, 211);"><a href="payment.html"
+                                style="text-decoration: none;color:rgb(214, 211, 211) ;" id="quydinh">Quy định thanh
+                                toán</a> |
+                            <a href="table_setting.html" style="text-decoration: none;color:rgb(214, 211, 211) ;"
+                                id="quydinh">Hướng dẫn
+                                đặt bàn </a>|
+                            <a href="javascript:void(0);" id="search-icon" onclick="toggleSearch()">
+                                <i class="fa-solid fa-magnifying-glass" style="color: rgb(214, 211, 211);"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <div class="main">
+        <section class="content1 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="images/LOGO-NHA-HANG.png" alt="" width="200px">
+                    </div>
+                    <div class="col-sm-9" style="padding-top: 25px;">
+                        <nav class="navbar navbar-expand-lg navbar-light ">
+                            <div class="container-fluid">
+
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <a class="nav-link " aria-current="page" href="#">Trang Chủ</a>
+                                        <a class="nav-link" href="introduce.html" style="margin-left: 40px;">Giới
+                                            Thiệu</a>
+                                        <a class="nav-link" href="menu.html" style="margin-left: 40px;">Thực Đơn</a>
+                                        <a class="nav-link" href="news_event.html" style="margin-left: 40px;">Tin Tức -
+                                            sự kiện</a>
+                                        <a class="nav-link" href="contacts.html" style="margin-left: 40px;">Liên Hệ </a>
+                                        <button type="button" class="btn1"
+                                            style="margin-left: 40px; color: white;"><b>Hotline:0909009009</b></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content2">
+            <div class="container-fluid text-center" style="background-color: rgba(0, 0, 0, 0.56); color: white; width: 750px; height: 200px; padding-bottom: 50px; padding-top: 10px;
+                 border-radius: 20px; ">
+                <h3 style=" font-family: 'Lobster', sans-serif;">Lẩu hơi Tỷ Hưu Trung Thành</h3>
+                <p>Đến với Nhà hàng Tỷ Hưu Trung Thành, quý khách sẽ được thưởng thức các món lấu <br> ngon nhất, được
+                    chế
+                    biến bởi các đầu bếp hàng đầu Việt Nam. Chúng tôi <br>chắc chắn sẽ khiến bạn hài lòng!.</p>
+                <button type="button" class="btn1" style="margin-left: 40px; color: white;"><b>Đặt bàn ngay</b></button>
+            </div>
+        </section>
+
+        <section class="content3">
+            <div class="container">
+                <img src="images/image.png" alt height="130px">
+            </div>
+        </section>
+
+        <section class="content4 mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3">
+                        <hr>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 style=" font-family: 'Lobster', sans-serif; color: red; margin-left: 20px;"> Thực đơn tại
+                            Nhà hàng Trung Thành </h3>
+                    </div>
+                    <div class="col-sm-3">
+                        <hr>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content5">
+            <div class="container text-center">
+                <p class="" style="font-size: 16px;">Thực đơn hấp dẫn của nhà hàng có tới hơn 150 món ăn chuẩn vị Việt Nam sẵn sàng cho bạn lựa chọn</p>
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2 mb-2">
+                        <button type="button" class="btn2 btn-primary w-100"><a href="home.html" style="color: white; text-decoration: none;">Khai vị</a></button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-2">
+                        <button type="button" class="btn3 btn-primary w-100"><a href="montuchon.html" style="color: white; text-decoration: none;">Món tự chọn</a></button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-2">
+                        <button type="button" class="btn2 btn-primary w-100"><a href="chienxao.html" style="color: white; text-decoration: none;">Chiên, xào, om</a></button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-2">
+                        <button type="button" class="btn2 btn-primary w-100"><a href="do_uong.html" style="color: white; text-decoration: none;">Đồ uống</a></button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-2">
+                        <button type="button" class="btn2 btn-primary w-100"><a href="lau.html" style="color: white; text-decoration: none;">Lẩu các loại</a></button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-2">
+                        <button type="button" class="btn2 btn-primary w-100"><a href="mon_dat_truoc.html" style="color: white; text-decoration: none;">Các món đặt trước</a></button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-2">
+                        <button type="button" class="btn2 btn-primary w-100"><a href="thuoc_la.html" style="color: white; text-decoration: none;">Thuốc lá</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content6 mt-3">
+            <div class="container" style="background-color: rgba(237, 235, 235, 0.49);">
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left" style="z-index: 1;"></i>
+                    <div class="carousel">
+                        <div class="card" style="padding: 10px; font-size: 17px;">
+                            <img src="images/mực-trứng.jpg" alt="img" draggable="false">
+                            <div class="card-content">
+                                <a href="muc_trung.html" style="text-decoration: none"> <b
+                                    style="color: rgb(3, 94, 10); font-size: 20px; ">Mực trứng</b> <br></a>
+    
+                            Giá niêm yết: <strike>250.000đ/đĩa</strike> <br>
+                            Giá khuyến mãi: <span style="color: red;">230.000đ/đĩa</span>
+                            </div>
+                        </div>
+                        <div class="card" style="padding: 10px; font-size: 17px;">
+                            <img src="images/ngao-2-vòi.jpg" alt="img" draggable="false">
+                            <div class="card-content">
+                                <a href="ngao_2_voi.html" style="text-decoration: none"> <b
+                                    style="color: rgb(3, 94, 10); font-size: 20px; ">Ngao 2 vòi</b> <br></a>
+                            Giá niêm yết: <strike>120.000đ/đĩa</strike> <br>
+                            Giá khuyến mãi: <span style="color: red;">100.000đ/đĩa</span>
+                            </div>
+                        </div>
+                        <div class="card" style="padding: 10px; font-size: 17px;">
+                            <img src="images/ba-chỉ-bò-mỹ.jpg" alt="img" draggable="false">
+                            <div class="card-content">
+                                <a href="ba_chi_bo_my.html" style="text-decoration: none"> <b
+                                    style="color: rgb(3, 94, 10); font-size: 20px; ">Ba chỉ bò Mỹ</b> <br></a>
+    
+                            Giá niêm yết: <strike>120.000đ/đĩa</strike> <br>
+                            Giá khuyến mãi: <span style="color: red;">100.000đ/đĩa</span>
+                            </div>
+                        </div>
+                        <div class="card" style="padding: 10px; font-size: 17px;">
+                            <img src="images/bề-bề.jpg" alt="img" draggable="false">
+                            <div class="card-content">
+                                <a href="be_be.html" style="text-decoration: none"> <b
+                                    style="color: rgb(3, 94, 10); font-size: 20px; ">Bề bề</b> <br></a>
+    
+                            Giá niêm yết: <strike>700.000đ/kg</strike> <br>
+                            Giá khuyến mãi: <span style="color: red;">650.000đ/kg</span>
+                            </div>
+                        </div>
+                        <div class="card" style="padding: 10px; font-size: 17px;">
+                            <img src="images/cá-song.jpg" alt="img" draggable="false">
+                            <div class="card-content">
+                                <a href="ca_song.html" style="text-decoration: none"> <b
+                                    style="color: rgb(3, 94, 10); font-size: 20px; ">Cá song</b> <br></a>
+
+                            Giá niêm yết: <strike>560.000đ/kg</strike> <br>
+                            Giá khuyến mãi: <span style="color: red;">510.000đ/kg</span>
+                            </div>
+                        </div>
+                        <div class="card" style="padding: 10px; font-size: 17px;">
+                            <img src="images/cá-vược.jpg" alt="img" draggable="false">
+                            <div class="card-content">
+                                <a href="ca_vuot.html" style="text-decoration: none"> <b
+                                    style="color: rgb(3, 94, 10); font-size: 20px; ">Cá vược</b> <br></a>
+                            Giá niêm yết: <strike>250.000đ/kg</strike><br>
+                            Giá khuyến mãi: <span style="color: red;">225.000đ/kg</span>
+                            </div>
+                        </div>
+                        <div class="card" style="padding: 10px; font-size: 17px;">
+                            <img src="images/bắp-bò-mỹ.jpg" alt="img" draggable="false">
+                            <div class="card-content">
+                                <a href="bap_bo_my.html" style="text-decoration: none"> <b
+                                    style="color: rgb(3, 94, 10); font-size: 20px; ">Bắp bò Mỹ</b> <br></a>
+
+                            Giá niêm yết: <strike>180.000đ/đĩa</strike> <br>
+                            Giá khuyến mãi: <span style="color: red;">140.000đ/đĩa</span>
+                            </div>
+                        </div>
+                        <div class="card" style="padding: 10px; font-size: 17px;">
+                            <img src="images/bầu-bò-mỹ.jpg" alt="img" draggable="false">
+                            <div class="card-content">
+                                <a href="gau_bo_my.html" style="text-decoration: none"> <b
+                                    style="color: rgb(3, 94, 10); font-size: 20px; ">Gầu bò Mỹ</b> <br></a>
+
+                            Giá niêm yết: <strike>160.000đ/đĩa</strike> <br>
+                            Giá khuyến mãi: <span style="color: red;">140.000đ/đĩa</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-3">
+                        <img src="images/banner1-1.jpg" alt="" width="310px" style="border-radius: 10px;"> <br><br>
+                        <img src="images/banner2.jpg" alt="" width="310px" style="border-radius: 10px;">
+
+                    </div>
+
+                    <div class="col-sm-6">
+                        <img src="images/banner-05.jpg" alt="" width="638px" 
+                            style="border-radius: 10px;  width: 100%; /* chiều rộng 100% của phần tử cha */
+                            max-width: 638px; 
+                            resize: vertical;">
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <img src="images/banner3.jpg" alt="" width="300px" height="215px" style="border-radius: 10px;">
+                        <br><br>
+                        <img src="images/banner-04.jpg" alt="" width="300px" height="205px"
+                            style="border-radius: 10px;">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="content7 text-center">
+            <div id="banner">
+                <div class="container-fluid">
+                    <img src="images/LOGO-NHA-HANG.png" alt="" style="padding-top: 40px;">
+                    <h3 style=" font-family: 'Lobster', sans-serif; color: white; padding-top: 20px;">Tại sao nên chọn
+                        Nhà hàng Lẩu hơi
+                        Trung Thành </h3>
+                    <p style="color: white; padding-top: 10px;">Thực đơn lẩu chuẩn vị Việt Nam có hơn 50 món do chính
+                        tay đầu bếp giàu kinh nghiệm lựa chọn, được
+                        dọn lên theo trình tự sup khai vị, món nướng, món măng, món <br> nước, món canh, lẩu, chè và
+                        trái cây
+                        tráng miện để thực khách thưởng thức trọn vẹn tất cả cả các loại món mà không cảm thấy quá no,
+                        thay vào đó chỉ còn lại hương vị <br> thơm ngon cùng chất dinh dưỡng đặc biệt trong từng món ăn
+                        sẽ
+                        làm cho thực khách nhớ mãi</p>
+
+                    <div class="row" style="margin-left: 120px; padding-top: 40px; padding-bottom: 60px;">
+                        <div class="col-sm-2" id="so1" style=" margin-right: 50px">
+                            <img src="images/fresh.png" alt="">
+                            <p style="color: white;">Sản phẩm luôn luôn <br> tươi sống</p>
+                        </div>
+
+                        <div class="col-sm-2" id="so1" style=" margin-right: 50px">
+                            <img src="images/online-order.png" alt="">
+                            <p style="color: white;">Hỗ trợ đặt hàng <br> Online dễ dàng</p>
+                        </div>
+
+                        <div class="col-sm-2" id="so1" style=" margin-right: 50px">
+                            <img src="images/FREE-WIFI.png" alt="">
+                            <p style="color: white;">Sóng wifi mạnh phủ <br> khắp nhà hàng</p>
+                        </div>
+
+                        <div class="col-sm-2" id="so1" style=" margin-right: 50px">
+                            <img src="images/free-parking.png" alt="">
+                            <p style="color: white;">Có chỗ đậu xe Ô tô <br> miễn phí</p>
+                        </div>
+
+                        <div class="col-sm-2" id="so1" style=" margin-right: 50px">
+                            <img src="images/ship-tan-nha.png" alt="">
+                            <p style="color: white;">Giao hàng tận nơi <br> với các đơn Online</p>
+                        </div>
+
+                        <div class="col-sm-2" id="so1" style=" margin-right: 50px">
+                            <img src="images/phong-hoi-truong.png" alt="">
+                            <p style="color: white;">Có phòng lớn tổ <br> chức hội nghị</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content8 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1" style="margin-top: 50px;"></div>
+                    <div class="col-sm-3" style="margin-top: 50px;">
+                        <hr>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 50px;">
+                        <h3 style=" font-family: 'Lobster', sans-serif; margin-left: 20px;"> Món ăn bán chạy nhất tháng
+                            4/2019
+                        </h3>
+                    </div>
+                    <div class="col-sm-3" style="margin-top: 50px;">
+                        <hr>
+                    </div>
+                    <div class="col-sm-1" style="margin-top: 50px;"></div>
+                </div>
+                <p class="text-center">Chúng tôi gợi ý cho bạn một số món ăn đã trở thành thương hiệu của chúng tôi và
+                    có doanh thu bán chạy nhất tháng 4/2019</p>
+
+                <div class="row">
+                    <div class="col-sm-3" id="anh1">
+                        <img src="images/rượu-vang-rosso.jpg" alt="" width="290px" style="border-radius: 10px;"> <br>
+                        <a href="ruou_rosso.html" style="text-decoration: none"> <b
+                                style="color: rgb(3, 94, 10); font-size: 20px; ">Rượu vang Rosso</b> <br></a>
+
+                        Giá niêm yết: <strike>450.000đ/chai</strike> <br>
+                        Giá khuyến mãi: <span style="color: red;">420.000đ/chai</span>
+                    </div>
+
+                    <div class="col-sm-3" id="anh1">
+                        <img src="images/rượu-john-đỏ.jpg" alt="" width="290px" style="border-radius: 10px;"> <br>
+
+                        <a href="ruou_john.html" style="text-decoration: none"> <b
+                                style="color: rgb(3, 94, 10); font-size: 20px; ">Rượu John đỏ new</b> <br></a>
+                        Giá niêm yết: <strike>500.000đ/chai</strike><br>
+                        Giá khuyến mãi: <span style="color: red;">110.000đ/chai</span>
+                    </div>
+
+                    <div class="col-sm-3" id="anh1">
+                        <img src="images/bia-heniken.jpg" alt="" width="290px" style="border-radius: 10px;">
+                        <br>
+                        <a href="bia.html" style="text-decoration: none"> <b
+                                style="color: rgb(3, 94, 10); font-size: 20px; ">Bia Heniken</b> <br></a>
+
+                        Giá niêm yết: <strike>25.000đ/chai</strike> <br>
+                        Giá khuyến mãi: <span style="color: red;">22.000đ/chai</span>
+                    </div>
+
+                    <div class="col-sm-3" id="anh1">
+                        <img src="images/rượu-sochu.jpg" alt="" width="290px" style="border-radius: 10px;">
+                        <br>
+                        <a href="ruou_sochu.html" style="text-decoration: none"> <b
+                                style="color: rgb(3, 94, 10); font-size: 20px; ">Rượu Sochu</b> <br></a>
+
+                        Giá niêm yết: <strike>85.000đ/chai</strike> <br>
+                        Giá khuyến mãi: <span style="color: red;">79.000đ/chai</span>
+                    </div>
+
+                </div>
+
+                <div class="row" style="padding-bottom: 50px;">
+                    <div class="col-sm-3" id="anh1">
+                        <img src="images/nhà-hàng.jpg" alt="" width="290px" style="border-radius: 10px;"> <br>
+                        <a href="khan_uot.html" style="text-decoration: none"> <b
+                                style="color: rgb(3, 94, 10); font-size: 20px; ">Khăn ướt</b> <br></a>
+
+                        Giá niêm yết: <strike>2.500đ/cái</strike> <br>
+                        Giá khuyến mãi: <span style="color: red;">2.000đ/cái</span>
+                    </div>
+
+                    <div class="col-sm-3" id="anh1">
+                        <img src="images/le-le.jpg" alt="" width="290px" style="border-radius: 10px;"> <br>
+
+                        <a href="le_le.html" style="text-decoration: none"> <b
+                                style="color: rgb(3, 94, 10); font-size: 20px; ">Le le</b> <br></a>
+                        Giá niêm yết: <strike>900.000đ/con</strike><br>
+                        Giá khuyến mãi: <span style="color: red;">800.000đ/con</span>
+                    </div>
+
+                    <div class="col-sm-3" id="anh1">
+                        <img src="images/nhím.jpg" alt="" width="290px" style="border-radius: 10px;">
+                        <br>
+                        <a href="nhim.html" style="text-decoration: none"> <b
+                                style="color: rgb(3, 94, 10); font-size: 20px; ">Nhím</b> <br></a>
+
+                        Giá niêm yết: <strike>500.000đ/kg</strike> <br>
+                        Giá khuyến mãi: <span style="color: red;">485.000đ/kg</span>
+                    </div>
+
+                    <div class="col-sm-3" id="anh1">
+                        <img src="images/ba-ba.jpg" alt="" width="290px" style="border-radius: 10px;">
+                        <br>
+                        <a href="ba_ba.html" style="text-decoration: none"> <b
+                                style="color: rgb(3, 94, 10); font-size: 20px; ">ba ba</b> <br></a>
+
+                        Giá niêm yết: <strike>600.000đ/chai</strike> <br>
+                        Giá khuyến mãi: <span style="color: red;">580.000đ/chai</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="content9">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center mb-3">
+                        <img src="images/phone-icon.png" alt="" width="60px" class="me-3">
+                        <div>
+                            <b>0909009009</b>
+                            <p class="m-0" style="font-size: 15px;">Hotline đặt hàng và tư vấn 24/7</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center mb-3">
+                        <img src="images/mail-icon.png" alt="" width="60px" class="me-3">
+                        <div>
+                            <b>demo@gmail.com</b>
+                            <p class="m-0" style="font-size: 15px;">Email nhận báo giá, yêu cầu xuất hóa đơn</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center mb-3">
+                        <img src="images/map-icon.png" alt="" width="60px" class="me-3">
+                        <div>
+                            <b>145 Phượng Hoàng, Hải Phòng</b>
+                            <p class="m-0" style="font-size: 15px;">Địa chỉ Nhà hàng Lẩu Hơi Trung Thành</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="content10">
+            <div class="container">
+                <div class="row text-center" style="padding-top: 50px; padding-bottom: 20px;">
+                    <div class="col-sm-6" style="background-color: white; border-radius: 10px; width: 600px;">
+                        <h3 style=" font-family: 'Lobster', sans-serif; padding-top: 15px;">Liên hệ đặt bàn</h3>
+                        <p>Quý khách vui lòng đặt bàn trước để chúng tôi sắp xếp cho quý khách chỗ <br>ngồi tốt nhất!
+                        </p>
+                        <form action="#" method="post" novalidate="novalidate" style="padding-bottom: 20px;">
+
+                            <div class="row">
+                                <div class="col-sm-6" style="text-align: start;">
+                                    <b for="">Tên của bạn: </b><br>
+                                    <input type="text" name="" id="inputText" placeholder="Tên của bạn...">
+                                </div>
+                                <div class="col-sm-6" style="text-align: start;">
+                                    <b for="">Số người </b><br>
+                                    <input type="number" name="" id="inputText" placeholder="Số người">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6" style="text-align: start;  padding-top: 15px;">
+                                    <b for="">Số điện thoại của bạn: </b><br>
+                                    <input type="tel" name="" id="inputText" placeholder="Số điện thoại của bạn...">
+                                </div>
+                                <div class="col-sm-6" style="text-align: start;  padding-top: 15px;">
+                                    <b for="" style="padding-top: 20px;">Bạn có thể tới dùng bữa ngày nào? </b><br>
+                                    <input type="date" name="" id="inputText">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6" style="text-align: start; padding-top: 15px;">
+                                    <b for="">Email của bạn (nếu có): </b><br>
+                                    <input type="text" name="" id="inputText" placeholder="Email của bạn...">
+                                </div>
+                                <div class="col-sm-6" style="text-align: start;  padding-top: 15px; ">
+                                    <b for="" style="margin-top: 50px;">Thời gian: </b><br>
+                                    <select name="thioigian" id="" style="  border-radius: 4px;
+                                    border: 1px solid rgb(184, 183, 183);
+                                    width: 270px;
+                                    height: 35px;
+                                    margin-top: 5px;
+                                    padding-left: 5px;">
+                                        <option value="Thời Gian">Thời Gian</option>
+                                        <option value="Buổi sáng">Buổi sáng</option>
+                                        <option value="Buổi trưa">Buổi trưa</option>
+                                        <option value="Buổi chiều">Buổi chiều</option>
+                                        <option value="Buổi tối">Buổi tố<i></i></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <p style="padding-top: 20px;">Khách đặt tiệc hội nghị, liên hoan vui lòng gọi trực tiếp:
+                                0909009009</p>
+                            <button type="button" class="btn4" style="color: white; "><b>Đặt bàn ngay</b></button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content11">
+            <div class="container">
+                <div class="row  text-center">
+                    <div class="col-sm-1" style="margin-top: 50px;"></div>
+                    <div class="col-sm-4" style="margin-top: 50px;">
+                        <hr>
+                    </div>
+                    <div class="col-sm-2" style="margin-top: 50px;">
+                        <h3 style=" font-family: 'Lobster', sans-serif; margin-left: 20px;"> Bài viết mới
+                        </h3>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 50px;">
+                        <hr>
+                    </div>
+                    <div class="col-sm-1" style="margin-top: 50px;"></div>
+                </div>
+                <p class="text-center">Cùng đầu bếp của Nhà hàng chúng tôi tìm hiểu và học cách chế biến một số món ăn
+                    thông dụng nhé!
+                </p>
+
+                <div class="row " style="margin-top: 30px; margin-bottom: 20px;">
+                    <div class="col-sm-4">
+                        <img src="images/flan.jpg" alt="" srcset="" width="380x" height="200px"
+                            style="border-radius: 10px;
+                             width: 380x; /* chiều rộng 100% của phần tử cha */
+                            max-width: 97%; /* tối đa chiều rộng là 100% của phần tử cha */
+                            height: 200px; /* chiều cao cố định */
+                            max-height: 50vh; /* tối đa chiều cao là 50% chiều cao của màn hình */
+                            resize: vertical;
+                            
+                            "> <br>
+                        <a href="banh_flan.html" id="so3">Bí quyết làm bánh flan min căng mềm mượt <br> đẹp "như hoa hậu"</a>
+                        <p style="font-size: 13px;">16/04/2019</p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <img src="images/gaxe.jpg" alt="" srcset="" width="380px" height="200px"
+                        style="border-radius: 10px;
+                                width: 380x; /* chiều rộng 100% của phần tử cha */
+                                max-width: 97%; /* tối đa chiều rộng là 100% của phần tử cha */
+                                height: 200px; /* chiều cao cố định */
+                                max-height: 50vh; /* tối đa chiều cao là 50% chiều cao của màn hình */
+                                resize: vertical;
+                            "> <br>
+                        <a href="mi_tron.html" id="so3">Tôi làm mì trộn mang đi ăn trưa, cả văn phòng nhao nhao đòi ăn ké</a>
+                        <p style="font-size: 13px;">16/04/2019</p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <img src="images/thịt-lợn-rừng.jpg" alt="" srcset="" width="400x" height="200px"
+                             style="border-radius: 10px;
+                                width: 380x; /* chiều rộng 100% của phần tử cha */
+                                max-width: 97%; /* tối đa chiều rộng là 100% của phần tử cha */
+                                height: 200px; /* chiều cao cố định */
+                                max-height: 50vh; /* tối đa chiều cao là 50% chiều cao của màn hình */
+                                resize: vertical;
+                            "> <br>
+                        <a href="mien_tron.html" id="so3">Giảm cân không hề khó kể từ khi tôi có món miến trọn "thần thánh" ăn trưa
+                            mỗi ngày</a>
+                        <p style="font-size: 13px;">16/04/2019</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- End Main -->
+
+    <!-- Start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <b>Nhà hàng Lẩu Hơi Tỳ Hưu Trung Thành</b>
+                    <p style="color: grey; padding-top: 10px;">Nhà hàng chúng tôi tự hào là một trong những nhà hàng nổi
+                        tiếng tại Thành phố Hải Phòng, chuyên
+                        về các món ăn chuẩn hương vị thuần Việt.</p>
+                    <p style="color: grey; padding-top: 20px;">Thực phẩm tươi sống là yêu cầu tất yếu của chúng tôi để
+                        chế bến cho khách hàng. Quý khách chắc
+                        chắn sẽ hài lòng về chất lượng sản phẩm và dịch vụ của chúng tôi.</p>
+
+                </div>
+
+                <div class="col-sm-3">
+                    <img src="images/LOGO-NHA-HANG.png" alt="" width="230px" height="120px"
+                    style="
+                    width: 230px; /* chiều rộng 100% của phần tử cha */
+                   max-width: 97%; /* tối đa chiều rộng là 100% của phần tử cha */
+                   height: 120px; /* chiều cao cố định */
+                   max-height: 50vh; /* tối đa chiều cao là 50% chiều cao của màn hình */
+                   resize: vertical;
+                    
+                    "
+                    >
+                    <button type="button" class="btn5" style="color: white;"><b>Đặt bàn ngay</b></button> <br>
+                    <div class="icon mt-2">
+                        <button class="btnfb"> <i class="fab fa-facebook" style="color: white;"></i></button>
+                        <button class="btnEmail"> <i class="far fa-envelope" style="color: white;"></i></button>
+                        <button class="btnPhone"> <i class="fas fa-phone" style="color: white;"></i></button>
+                        <button class="btnPin"> <i class="fab fa-pinterest" style="color: white;"></i></button>
+                        <button class="btnGG"> <i class="fab fa-google-plus-g" style="color: white;"></i></button>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+                    <b>Thông tin liên hệ</b>
+                    <br><br>
+                    <ul style="font-size: 15px;">
+                        <li>Địa chỉ: Số 29 ngõ 18 Lương Ngọc Quyến, Văn <br> Quán, Hà Đông, Hà Nội
+                            Điện thoại: 0909009009 </li> <br>
+                        <li>Email: demo@gmail.com</li> <br>
+                        <li>Website: www.website.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://kit.fontawesome.com/f6dce9b617.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/chuyenanh.js"></script>
+</body>
+
+</html>
