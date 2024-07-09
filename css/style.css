@@ -1,3 +1,9 @@
+
+.bgHeader{
+    background-image: url(../images/slider01.jpg);
+   
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,35 +11,31 @@
     
 }
 
-.container {
-   /* chiều rộng container 90% chiều rộng viewport */
-    /* tối đa 1000px */
-    margin: 0 auto; /* căn giữa container */
-}
-
 
 .header1 {
     background-color: #000000;
-   
     font-size: 13px;
-    display: flex;
-    align-items: center;
-    padding-top: 10px;
 }
 
-.content1 {
-    display: flex;
-    justify-content: center;
-    background-color: #d5c7c7;
 
+#anhLoGo{
+    max-height: 110px;
+    z-index: 99999999;
+    position: absolute;
+    background: #de0b0b;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 2px 2px 15px #0000008f;
 }
 
 
 .btn1 {
-    border: 1px solid rgb(255, 50, 47);
+    border: none;
     background-color: rgb(255, 50, 47);
-    padding: 10px 30px;
+    padding: 10px 15px;
     border-radius: 20px;
+    font-size: 16px;
 }
 
 .btn1:hover {
@@ -49,6 +51,7 @@
 }
 
 .content2 {
+    
     background-image: url(../images/slider01.jpg);
     height: 500px;
     display: flex;
@@ -62,16 +65,69 @@
 
 }
 
+.content4{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.title{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+    #anhLoGo {
+       margin-left: 110px;
+        /* Ẩn logo khi màn hình nhỏ hơn hoặc bằng 768px */
+    }
+
+    .navbar {
+       /* Thay đổi màu nền của navbar thành màu trắng */
+        width: 100%; /* Chiếm toàn bộ chiều rộng của màn hình */
+        padding-left: 0; /* Xóa padding bên trái */
+        padding-right: 0; /* Xóa padding bên phải */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Sắp xếp các nav links thành cột khi màn hình nhỏ */
+        text-align: left; /* Căn lề trái cho các nav links */
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0; /* Xóa margin-left giữa các nav links khi chúng được xếp theo cột */
+        color: black; /* Đổi màu chữ của nav links thành màu đen */
+        background-color: rgb(96, 91, 91); /* Thay đổi màu nền của nav links thành màu trắng */
+        padding: 10px; /* Thêm padding cho nav links */
+      /* Bo tròn các góc của nav links */
+    }
+
+    .navbar-toggler {
+        border-color: black; /* Đổi màu viền của toggle button thành màu đen */
+    }
+
+    .btn1 {
+        display: none; /* Ẩn nút Hotline khi màn hình nhỏ hơn hoặc bằng 768px */
+    }
+
+}
+
 .btn2 {
-    border: 1px solid rgb(92, 90, 90);
-    background-color: rgb(92, 90, 90);
-    width: 120px;
+    border: none;
+    background-color: rgb(128, 127, 127);
+    width: auto;
     height: 40px;
     border-radius: 20px;
     font-family: "Lobster", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 10px;
     color: white;
+    padding: 0px 20px;
 
 }
 
@@ -81,14 +137,15 @@
 }
 
 .btn3 {
-    border: 1px solid rgb(255, 255, 255);
+    border:none;
     background-color: rgb(255, 50, 47);
-  
+    width: auto;
     height: 40px;
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     font-family: "Lobster", sans-serif;
+    padding: 0px 20px;
 }
 
 .btn3:hover {
@@ -96,8 +153,9 @@
     background-color: rgb(71, 67, 66);
 }
 
+
 #anh1 {
-    border: 0.5px solid rgb(235, 235, 235);
+    border: none;
     padding-top: 10px;
     width: max-content;
     padding-bottom: 10px;
@@ -117,13 +175,10 @@
 #so1:hover {
     background-color: red;
     border-radius: 15px;
-
 }
 
 #so1 {
     width: fit-content;
-    height: fit-content;
-    margin-left: 10px;
 }
 
 #banner {
@@ -132,12 +187,12 @@
 
 .content8 {
     background-image: url(../images/bg2.jpg);
-
+   
 }
 
 .content9 {
     background-image: url(../images/bg4.jpg);
-    padding-top: 30px;
+    padding-top: 15px;
     color: white;
 }
 
@@ -148,7 +203,7 @@
 
 #inputText {
     border-radius: 4px;
-    border: 1px solid rgb(184, 183, 183);
+    border: 1px solid #dbd9d9;
     width: 270px;
     height: 35px;
     margin-top: 5px;
@@ -156,7 +211,7 @@
 }
 
 .btn4 {
-    border: 1px solid rgb(255, 255, 255);
+    border: none;
     background-color: rgb(215, 42, 39);
     width: 140px;
     height: 40px;
@@ -189,13 +244,11 @@ footer {
 }
 
 .btn5 {
-    border: 1px solid rgb(0, 0, 0);
+    border: none;
     background-color: rgb(215, 42, 39);
     width: 140px;
     height: 40px;
     border-radius: 30px;
-    margin-left: 25px;
-    margin-top: 10px;
 
 }
 
@@ -214,7 +267,7 @@ footer {
     padding-left: 8px;
     padding-right: 8px;
     background-color: rgb(57, 123, 209);
-    border: 1px solid black;
+    border: none;
 }
 
 .btnEmail {
@@ -223,7 +276,7 @@ footer {
     padding-left: 8px;
     padding-right: 8px;
     background-color: black;
-    border: 1px solid black;
+    border: none;
 }
 
 .btnPhone {
@@ -232,7 +285,7 @@ footer {
     padding-left: 8px;
     padding-right: 8px;
     background-color: rgb(25, 162, 70);
-    border: 1px solid black;
+    border: none;
 }
 
 .btnPin {
@@ -241,7 +294,7 @@ footer {
     padding-left: 8px;
     padding-right: 8px;
     background-color: rgb(209, 21, 21);
-    border: 1px solid black;
+    border: none;
 }
 
 .btnGG {
@@ -250,12 +303,7 @@ footer {
     padding-left: 8px;
     padding-right: 8px;
     background-color: rgb(224, 126, 41);
-    border: 1px solid black;
-}
-
-.icon {
-    margin-left: 25px;
-    padding-top: 10px;
+    border: none;
 }
 
 .inputType {
@@ -277,7 +325,7 @@ footer {
 #search-input {
     margin-left: 10px;
     padding: 5px;
-    border: 1px solid white;
+    border:none;
     border-radius: 4px;
     display: none;
     position: absolute;
@@ -298,15 +346,17 @@ footer {
     overflow: hidden;
 }
 
+
+
 .col-sm-3 img {
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
 .col-sm-3 img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+    transform: scale(1.05); /* Phóng nhỏ lại */
 }
+
 
 .col-sm-3 img:hover::after {
     content: '\2192'; /* Mã Unicode của mũi tên phải */
@@ -353,3 +403,4 @@ textarea {
     max-height: 50vh; /* tối đa chiều cao là 50% chiều cao của màn hình */
     resize: vertical; /* cho phép chỉnh sửa kích thước theo chiều dọc */
 }
+
