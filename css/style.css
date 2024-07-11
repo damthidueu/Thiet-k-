@@ -4,19 +4,117 @@
    
 }
 
+body{
+    overflow-x: hidden;
+}
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 
+.container{
+    width: 1140px;
+}
 
 .header1 {
     background-color: #000000;
     font-size: 13px;
+
 }
 
+
+/* Áp dụng cho tất cả các phần tử khi màn hình nhỏ hơn 576px */
+@media (max-width: 576px) {
+    body {
+      width: 576px;
+    }
+    
+    #quydinh{
+        display: none;
+    }
+
+    #search-icon{
+        display: none;
+    }
+
+    #menu{
+       width: 400px;
+        margin-left: 40px;
+    }
+    
+    #title1{
+        width:520px;
+    }
+
+    .wrapper{
+        width:500px;
+    }
+
+    #banner1{
+        width:500px;
+    }
+
+    .title{
+        width:500px;
+    }
+
+  
+}
+
+@media (max-width: 576px){
+    #anhLoGo{
+        display: none;
+    }
+
+    .btn7{
+        display: none;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1050;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .navbar-nav .nav-link {
+        color: black;
+        font-size: 1.2rem;
+        margin: 10px 0;
+        text-align: left;
+    }
+   
+    .close-btn {
+        display: block;
+        color: #000000;
+    }
+
+    .navbar-collapse {
+        display: block;
+       
+    }
+}
+
+  
+.close-btn {
+    color: rgb(255, 50, 47);
+    font-size: 1.5rem;
+    user-select: none; /* Không thể chọn dấu '×' */
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    
+}
 
 #anhLoGo{
     max-height: 110px;
@@ -43,12 +141,27 @@
     background-color: rgb(196, 52, 27);
 }
 
+.btn7 {
+    border: none;
+    background-color: rgb(255, 50, 47);
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.btn7:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(196, 52, 27);
+}
+
 .nav-link {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
 }
+
+
 
 .content2 {
     
@@ -81,41 +194,6 @@
 }
 
 
-@media (max-width: 768px) {
-    #anhLoGo {
-       margin-left: 110px;
-        /* Ẩn logo khi màn hình nhỏ hơn hoặc bằng 768px */
-    }
-
-    .navbar {
-       /* Thay đổi màu nền của navbar thành màu trắng */
-        width: 100%; /* Chiếm toàn bộ chiều rộng của màn hình */
-        padding-left: 0; /* Xóa padding bên trái */
-        padding-right: 0; /* Xóa padding bên phải */
-    }
-
-    .navbar-nav {
-        flex-direction: column; /* Sắp xếp các nav links thành cột khi màn hình nhỏ */
-        text-align: left; /* Căn lề trái cho các nav links */
-    }
-
-    .navbar-nav .nav-link {
-        margin-left: 0; /* Xóa margin-left giữa các nav links khi chúng được xếp theo cột */
-        color: black; /* Đổi màu chữ của nav links thành màu đen */
-        background-color: rgb(96, 91, 91); /* Thay đổi màu nền của nav links thành màu trắng */
-        padding: 10px; /* Thêm padding cho nav links */
-      /* Bo tròn các góc của nav links */
-    }
-
-    .navbar-toggler {
-        border-color: black; /* Đổi màu viền của toggle button thành màu đen */
-    }
-
-    .btn1 {
-        display: none; /* Ẩn nút Hotline khi màn hình nhỏ hơn hoặc bằng 768px */
-    }
-
-}
 
 .btn2 {
     border: none;
@@ -128,7 +206,8 @@
     margin-left: 10px;
     color: white;
     padding: 0px 20px;
-
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .btn2:hover {
@@ -146,6 +225,8 @@
     color: white;
     font-family: "Lobster", sans-serif;
     padding: 0px 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .btn3:hover {
@@ -157,7 +238,9 @@
 #anh1 {
     border: none;
     padding-top: 10px;
-    width: max-content;
+    padding-left: 10px;
+    width: 250px;
+    height: fit-content;
     padding-bottom: 10px;
     background-color: white;
     margin-top: 10px;
@@ -178,6 +261,8 @@
 }
 
 #so1 {
+    margin-left: 10px;
+    margin-right: 30px;
     width: fit-content;
 }
 
