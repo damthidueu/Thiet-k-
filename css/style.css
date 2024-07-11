@@ -40,11 +40,6 @@ body{
         display: none;
     }
 
-    #menu{
-       width: 400px;
-        margin-left: 40px;
-    }
-    
     #title1{
         width:520px;
     }
@@ -57,9 +52,7 @@ body{
         width:500px;
     }
 
-    .title{
-        width:500px;
-    }
+    
 
   
 }
@@ -70,11 +63,11 @@ body{
     }
 
     .navbar-collapse {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.881);
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 60%;
         height: 100%;
         z-index: 1050;
         padding-top: 20px;
@@ -91,29 +84,35 @@ body{
    
     .close-btn {
         display: block;
-        color: #000000;
+        font-size: 1.5rem;
+        user-select: none; /* Không thể chọn dấu '×' */
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        cursor: pointer;
     }
 
-    .navbar-collapse {
-        display: block;
-       
+  
+
+  
+    #anhLoGo 
+    {
+         display: block;
     }
-    #anhLoGo{
+
+    .navbar-collapse.show + #anhLoGo 
+    {
         display: none;
+    }
+
+    #name{
+        font-size: 19px;
+        padding-bottom: 10px;
     }
 }
 
   
-.close-btn {
-    color: rgb(255, 50, 47);
-    font-size: 1.5rem;
-    user-select: none; /* Không thể chọn dấu '×' */
-    position: absolute;
-    top: 25px;
-    right: 20px;
-    cursor: pointer;
-    
-}
+
 
 #anhLoGo{
     max-height: 110px;
@@ -195,7 +194,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 70%;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 
@@ -330,7 +329,7 @@ body{
 footer {
     background-color: #000000f7;
     color: white;
-    padding-top: 40px;
+    padding-top: 17px;
 }
 
 .btn5 {
